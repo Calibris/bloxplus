@@ -1,0 +1,19 @@
+.full {
+	width: 100%;
+	display: inline-block;
+}
+
+.first {
+	width: 46%;
+	display: inline-block;
+}
+
+.second {
+	width: 46%;
+	display: inline-block;
+	float: right;
+}
+
+.user-offline {
+   color: #777777!important;
+}
