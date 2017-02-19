@@ -48,6 +48,18 @@ var settings = [{
 	parent: 2,
 	enabled: false
 }, {
+	name: "Message Notifier",
+	id: "opt_message_notifier",
+	tip: "Notifies you when you get a message",
+	parent: 2,
+	enabled: false
+},{
+	name: "Trade Notifier",
+	id: "opt_trade_notifier",
+	tip: "Notifies you when you get a trade",
+	parent: 2,
+	enabled: false
+}, {
 	name: "Collectible Notifier",
 	id: "opt_collectible_notifier",
 	tip: "Notifies you when a new collectible is released",
