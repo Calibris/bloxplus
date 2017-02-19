@@ -2,18 +2,22 @@ var collectible = new Audio('assets/audios/collectible.mp3');
 var item = new Audio('assets/audios/item.mp3');
 var updated = new Audio('assets/audios/updated.mp3');
 var message = new Audio('assets/audios/message.mp3');
-var trade = new Audio('assets/audios/trade.mp3');
+var tradeau = new Audio('assets/audios/trade.mp3');
 var info = new Object();
 var links = new Object();
 var user = new Object();
 var recent = new Object();
 var scan = new Object();
+var mes = new Object();
+var trade = new Object();
 var scanned = false;
 
 $.getJSON('http://bloxplus.com/data.json').success(function(data) {
 	links.recent = data["links"]["recent"];
 	links.tshirts = data["links"]["tshirts"];
 	links.search = data["links"]["search"];
+	links.messages = data["links"]["messages"];
+	links.trades = data["links"]["trades"];
 	info.time = data["notifier"]["interval"];
 
 	$.get('https://www.bloxcity.com/users/search/').success(function(data) {

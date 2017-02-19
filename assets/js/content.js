@@ -179,6 +179,11 @@ if (window.location.href.indexOf('https://www.bloxcity.com/forum/thread/') > -1)
 	}
 }
 
+if(window.location.href.endsWith("/reply/")==true){
+	var reply = document.getElementsByClassName("edit-hover")[0]
+	reply.click()
+}
+
 function postTrade() {
 	var giving = [];
 	var receiving = [];
