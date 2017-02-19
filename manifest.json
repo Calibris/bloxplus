@@ -6,7 +6,7 @@
 	"manifest_version": 2,
 	"incognito": "split",
 	"web_accessible_resources": [ "*.html", "https://www.bloxcity.com/*" ],
-	"permissions": ["notifications", "storage", "unlimitedStorage", "https://www.bloxcity.com/*", "http://bloxplus.com/*", "https://storage.googleapis.com/*"],
+	"permissions": ["notifications", "storage", "unlimitedStorage", "https://www.bloxcity.com/*", "https://storage.googleapis.com/*"],
 	"icons": {
 		"128": "assets/images/bc1200.png",
 		"48": "assets/images/bc1200.png",
