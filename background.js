@@ -1,16 +1,31 @@
-(function retest() {
-	if (!scanned) {
-		setTimeout(function() { retest() },0);
+$.get('https://www.bloxcity.com/users/search/').success(function(data) {
+	links.recent = "https://www.bloxcity.com/market/recent.php?ItemType=all&Page=1";
+	links.tshirts = "https://www.bloxcity.com/market/recent.php?ItemType=tshirt&Page=1";
+	links.search = "https://www.bloxcity.com/users/search/";
+	links.messages = "https://www.bloxcity.com/account/messages/";
+	links.trades = "https://www.bloxcity.com/account/trades/";
+	info.time = 2000;
+
+	if ($('.dropdown-button1', data).length > 0) {
+		user.name = $('.dropdown-button1[style="font-size:16px;"]', data).text().split("arrow_drop_down").join("").trim();
+		user.id = $('a:contains("Profile")', data).attr('href').split("https://www.bloxcity.com/users/").join("").split("/" + user.name + "/").join("");
+		user.on = true;
+
+		init();
 	} else {
-		if (user.on) {
-			init();
-		} else {
-			setTimeout(function() {
-				retest();
-			}, 10000);
-		}
+		chrome.notifications.create('login', {
+			type: 'basic',
+			title: 'Error',
+			message: 'Not logged in',
+			iconUrl: 'https://storage.googleapis.com/bloxcity-file-storage/assets/images/BCLogo-Square.png',
+			buttons: [{
+				title: 'Login'
+			}]
+		});
+
+		setTimeout(function() { init() }, 5000);
 	}
-})();
+});
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 	for (key in settings) {
@@ -40,6 +55,12 @@ chrome.notifications.onButtonClicked.addListener(function(button, buttonIndex) {
 		chrome.tabs.create({
 			url: scan.url
 		});
+	}
+
+	if (button == "login") {
+		chrome.tabs.create({
+			url: 'https://www.bloxcity.com/login/'
+		})
 	}
 
 	if (button == "join") {
@@ -163,12 +184,8 @@ function init() {
 		$.get(links.search).success(function(data) {
 			if ($('.dropdown-button1', data).length > 0) {
 				user.on = true;
-			} else {
-				user.on = false;
-			}
-
-			if ($('.dropdown-button1', data).length > 0) {
-				user.on = true;
+				user.name = $('.dropdown-button1[style="font-size:16px;"]', data).text().split("arrow_drop_down").join("").trim();
+				user.id = $('a:contains("Profile")', data).attr('href').split("https://www.bloxcity.com/users/").join("").split("/" + user.name + "/").join("");
 			} else {
 				user.on = false;
 			}
@@ -177,7 +194,7 @@ function init() {
 
 	// Getting the latest t-shirt ID
 	$.get(links.tshirts).success(function(data) {
-		recent.id = $('.col', data).first().find('a').first().attr('href').split("https://www.bloxcity.com/market/").join("").split("/").join("");
+		recent.id = parseInt($('.col', data).first().find('a').first().attr('href').split("https://www.bloxcity.com/market/").join("").split("/").join(""));
 		$.get(links.recent).success(function(data){
 			recent.scanned = $('.col', data).first().find('a').first().attr('href').split("https://www.bloxcity.com/market/").join("").split("/").join("");
 
@@ -224,10 +241,9 @@ function init() {
 					} else {
 						info.text = "";
 					}
-
 					if (!JSON.parse(localStorage.getItem('opt_disable_notifications'))) {
-						if (info.text != "" && info.type != "") {
-							if(recent.scanned != scan.id) {
+						if (info.type != "") {
+							if(scan.id != recent.scanned) {
 								if ((info.type == "updated" && JSON.parse(localStorage.getItem('opt_updated_notifier'))) || (info.type == "collectible" && JSON.parse(localStorage.getItem('opt_collectible_notifier'))) || (info.type == "item" && JSON.parse(localStorage.getItem('opt_item_notifier')))) {
 									chrome.notifications.create('new', {
 										type: 'list',
@@ -263,8 +279,8 @@ function init() {
 									}
 								}
 								recent.scanned = scan.id;
-								if(recent.id < scan.id) {
-									recent.id = scan.id;
+								if(recent.id < parseInt(scan.id)) {
+									recent.id = parseInt(scan.id);
 								}
 							}
 						}
@@ -284,7 +300,7 @@ function init() {
 		
 		
 		var messageNotifier = setInterval(function(){
-			if(JSON.parse(localStorage.getItem('opt_message_notifier')) && !JSON.parse(localStorage.getItem('opt_disable_notifications'))) {
+			if(JSON.parse(localStorage.getItem('opt_message_notifier')) && !JSON.parse(localStorage.getItem('opt_disable_notifications')) && user.on) {
 				$.get(links.messages).success(function(data) {
 					mes.full = $('form[method="post"] a', data).first();
 					mes.html = mes.full.find('table tbody tr td:last-child', data);
@@ -338,7 +354,7 @@ function init() {
 	})
 	
 	var tradeNotifier = setInterval(function() {
-		if(JSON.parse(localStorage.getItem('opt_trade_notifier')) && !JSON.parse(localStorage.getItem('opt_disable_notifications'))) {
+		if(JSON.parse(localStorage.getItem('opt_trade_notifier')) && !JSON.parse(localStorage.getItem('opt_disable_notifications')) && user.on) {
 			$.get(links.trades).success(function(data) {
 				trade.full = $('#Incoming a', data).first();
 				trade.link = trade.full.attr('href')

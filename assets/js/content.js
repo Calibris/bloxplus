@@ -2,11 +2,13 @@ var report = new Object();
 var sobj = new Object();
 var cobj = new Object();
 
-var xmlHttp = new XMLHttpRequest();
-xmlHttp.open("GET", "https://www.bloxcity.com/forum/create/9/", false);
-xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-xmlHttp.send(null);
-var csrf_token = $('[name="csrf_token"]', xmlHttp.responseText).val();
+if ($('.dropdown-button1').length > 0) {
+	var xmlHttp = new XMLHttpRequest();
+	xmlHttp.open("GET", "https://www.bloxcity.com/forum/create/9/", false);
+	xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	xmlHttp.send(null);
+	var csrf_token = $('[name="csrf_token"]', xmlHttp.responseText).val();
+}
 
 for (key in settings) {
 	if (!localStorage.getItem(settings[key].id)) {

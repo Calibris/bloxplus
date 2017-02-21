@@ -11,23 +11,3 @@ var scan = new Object();
 var mes = new Object();
 var trade = new Object();
 var scanned = false;
-
-$.getJSON('http://bloxplus.com/data.json').success(function(data) {
-	links.recent = data["links"]["recent"];
-	links.tshirts = data["links"]["tshirts"];
-	links.search = data["links"]["search"];
-	links.messages = data["links"]["messages"];
-	links.trades = data["links"]["trades"];
-	info.time = data["notifier"]["interval"];
-
-	$.get('https://www.bloxcity.com/users/search/').success(function(data) {
-		if ($('.dropdown-button1', data).length > 0) {
-			user.name = $('.dropdown-button1[style="font-size:16px;"]', data).text().split("arrow_drop_down").join("").trim();
-			user.id = $('a:contains("Profile")', data).attr('href').split("https://www.bloxcity.com/users/").join("").split("/" + user.name + "/").join("");
-			user.on = true;
-		} else {
-			user.on = false;
-		}
-		scanned = true;
-	})
-});
