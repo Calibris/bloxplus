@@ -1,0 +1,396 @@
+.night-theme,
+.night-theme .container div[style*="background: none; border-radius: 0px; border: none; padding: 0px"] {
+    background-color: rgb(34, 34, 34) !important;
+}
+
+
+.night-theme .groups-green-button,
+.night-theme .market-yellow-button,
+.night-theme .groups-red-button,
+.night-theme .col.s12.m9.l12 .container .content-box div:nth-child(5) .groups-blue-button {
+	filter: grayscale(100%) !important;
+	color: rgb(250, 250, 250) !important;
+}
+
+
+.night-theme .parent-market .content-box,
+.night-theme .col .browser-default,
+.night-theme .col .market-searchbar,
+.night-theme .light-blue.darken-2,
+.night-theme .main-nav .nav-wrapper.light-blue.darken-2,
+.night-theme .bc-content form .row .col input,
+.night-theme .bc-content div:last-child form textarea,
+.night-theme .col.s12.m10.l10 div .row .col.s6 form input,
+.night-theme .col.s12.m10.l10 div .row .col.s6 form textarea,
+.night-theme .col.s12.m10.l10 div form #Logo,
+.night-theme #search,
+.night-theme .group-tab-link,
+.night-theme div[style*="background:#0288d1;padding:10px 15px;font-size:20px;color:white;"],
+.night-theme .gray-h,
+.night-theme .hover,
+.night-theme .bc-content,
+.night-theme .alert-info,
+.night-theme .message-read table tbody tr,
+.night-theme .message-read table tbody tr td,
+.night-theme .modal-content,
+.night-theme .modal-footer,
+.night-theme .modal.open,
+.night-theme div[style*="position:absolute;top:0;right:0;"] ul li a{
+    background-color: #333 !important;
+	color: rgb(250, 250, 250) !important;
+	border: 0px !important;
+	border-radius: 0px !important;
+	box-shadow: 0px 0px 0px !important;
+}
+
+
+.night-theme .left.hide-on-med-and-down .no-hover .dropdown-content,
+.night-theme .right.hide-on-med-and-down li:last-child .dropdown-content,
+.night-theme .left.hide-on-med-and-down .no-hover .dropdown-content li>a,
+.night-theme .right.hide-on-med-and-down li:last-child .dropdown-content li>a{
+	background-color: rgb(100, 100, 100) !important;
+	color: rgb(250, 250, 250) !important;
+	border: hidden !important;
+	border-radius: 0px !important;
+	box-shadow: 0px 0px 0px !important;
+}
+
+
+.night-theme .gray-hover,
+.night-theme .content-box,
+.night-theme div[style*="padding:15px 25px;background:white;"],
+.night-theme div[style="background-color:#ffffff;position:relative;z-index:2;"]{
+    background-color: #444 !important;
+    border: 0px !important;
+	box-shadow: 0px 0px 0px !important;
+}
+
+
+.night-theme .divider,
+.night-theme .dropdown-content.fall-down{
+	background-color: #555 !important;
+    border: 0px !important;
+	box-shadow: 0px 0px 0px !important;
+}
+
+
+.night-theme .gray-hover:hover,
+.night-theme .tab a[href="#privacy"]:hover,
+.night-theme .tab a[href="#account"]:hover,
+.night-theme .tab a[href="#password"]:hover,
+.night-theme .tab a[href="#billing"]:hover,
+.night-theme .tab a[href="#bcplus"]:hover,
+.night-theme .groups-hover:hover,
+.night-theme div[style*="border-right:1px solid #CCCCCC;background:#FAFAFA;"],
+.night-theme div[style*="border-right:1px solid #CCCCCC;border-left:1px solid #CCCCCC;background:#FAFAFA;"],
+.night-theme .gray-h:hover,
+.night-theme .hover:hover,
+.night-theme .groups-blue-button:hover,
+.night-theme .blue-hover:hover,
+.night-theme .green-hover:hover,
+.night-theme .red-hover:hover,
+.night-theme .message-read:hover,
+.night-theme .message-hover:hover,
+.night-theme div[style*="display:inline;cursor:pointer;"] div:hover,
+.night-theme .tab.col.s4 a:hover {
+    background-color: #555 !important;
+}
+
+
+.night-theme .group-tab-link:hover{
+	background-color: #555 !important;
+	filter: grayscale(100%) !important;
+}
+
+
+.night-theme div .row.valign-wrapper a div[style*="font-size:16px;font-weight:500;"],
+.night-theme div .row.valign-wrapper a div[style*="font-size:16px;"],
+.night-theme .col .browser-default,
+.night-theme .header-text,
+.night-theme .item-name,
+.night-theme div[style*="padding:10px 0;font-size:14px;color:#666;"] .row div,
+.night-theme .content-box .row.valign-wrapper .col div[style*="display:inline-block;margin-top:15px;"] a div,
+.night-theme div[style*="padding:10px 0;font-size:14px;color:#666;"] .row div a,
+.night-theme .bc-content h5,
+.night-theme div[style*="padding:10px 0;font-size:14px;color:#666;"] a,
+.night-theme div[style*="padding:10px 0;font-size:14px;color:#666;"],
+.night-theme .bc-content .table-responsive tbody tr:first-child td,
+.night-theme .bc-content .table-responsive tbody tr:not(:first-child) td a div,
+.night-theme .bc-content .link-parent a span,
+.night-theme .bc-content div div[style*="font-size:1.25rem;padding-bottom:20px;"],
+.night-theme .bc-content div:last-child h3,
+.night-theme .bc-content div .row .col div[style*="font-size:1.64rem;padding-bottom:20px;"],
+.night-theme .row .col.m9  .content-box .row .col.s9 div[style*="word-break:break-word;"],
+.night-theme .row .col.m9  .content-box .row .col.s3 .row .col.s3.right-align,
+.night-theme div[style*="padding-top:15px;font-weight:bold;"],
+.night-theme .content-box .row .col a div[style*="padding-top:3px;color:#444444;font-size:16px;"],
+.night-theme div[style*="font-size:26px;font-weight:300;"],
+.night-theme div[style*="font-size:20px;"],
+.night-theme div[style*="font-size:16px;"],
+.night-theme div[style*="font-size:26px;display:inline-block;vertical-align:middle;"],
+.night-theme div[style*="font-size:22px;"],
+.night-theme a[style*="display:block;padding:2px 0;color:#555555;font-size:16px;"],
+.night-theme div[style*="font-size:24px;"],
+.night-theme .content-box b,
+.night-theme td[style*="text-align:right;"],
+.night-theme li a,
+.night-theme h4,
+.night-theme h5,
+.night-theme .col.s12.m6.l10 .row .col.s10 div:first-child,
+.night-theme div[style*="padding:25px;"],
+.night-theme label[style*="font-size:14px;color:#333;"] {
+    color: rgb(250, 250, 250) !important;
+}
+
+
+.night-theme div .row.valign-wrapper a div[style*="font-size:13px;color:#555;"],
+.night-theme #parent-market .content-box div .row .col .item-creator,
+.night-theme #parent-market .content-box div div[style*="padding-top:15px;text-align:center;"] a,
+.night-theme .content-box .row.valign-wrapper .col div[style*="display:inline-block;margin-top:15px;"] div,
+.night-theme .content-box .row.valign-wrapper .col.right-align.hide-on-med-and-down div,
+.night-theme .parent-market .content-box i[style*="color:#666666;font-size:22px;"],
+.night-theme .gray-hover .row.valign-wrapper .hide-on-med-and-down div,
+.night-theme .content-box .valign-wrapper .center-align,
+.night-theme .bc-content .table-responsive tbody tr:not(:first-child) .right-align,
+.night-theme .bc-content .table-responsive tbody tr:not(:first-child) .center-align,
+.night-theme .bc-content .table-responsive tbody tr:not(:first-child) td div,
+.night-theme .bc-content div .row div:first-child,
+.night-theme .bc-content form .row .col div[style*="font-size:16px;font-weight:600;"],
+.night-theme .bc-content div:last-child div,
+.night-theme .bc-content div .row div:last-child table tbody tr,
+.night-theme .gray-hover .row.valign-wrapper .col:last-child div,
+.night-theme .gray-hover .row.valign-wrapper .col.center-align,
+.night-theme .row .col.m9  .content-box .row .col.s9 .row .col.s6 div,
+.night-theme .row .col.m9  .content-box .row .col.s9 .row .col.s6,
+.night-theme .row .col.m9  .content-box .row .col.s3 .row .col.s3.left-align,
+.night-theme .row .col.s12.m9 .content-box li a,
+.night-theme .item-creator,
+.night-theme .item-stock,
+.night-theme a[target="_blank"],
+.night-theme td[style*="padding-left:15px;font-size:14px;color:#555555;"],
+.night-theme div[style*="font-size:14px;color:#666666;"],
+.night-theme div[style*="color:#ED3737;font-size:13px;"],
+.night-theme div[style*="font-size:14px;"],
+.night-theme p,
+.night-theme div[style*="font-size:26px;font-weight:300;"] b,
+.night-theme div[style*="color:#999;font-size:14px;"],
+.night-theme div[style*="font-size:18px;font-weight:300;margin-top:-10px;"],
+.night-theme #blocked-users,
+.night-theme .content-box,
+.night-theme div[style*="font-size:12px;color:#E71D36;"],
+.night-theme legend[style*="text-transform:uppercase;color:#666;font-size:12px;"],
+.night-theme .pagination.center-align li a,
+.night-theme div[style*="display:inline;cursor:pointer;"] div div span,
+.night-theme .tab.col.s4 a {
+    color: rgb(200, 200, 200) !important;
+}
+
+
+.night-theme .content-box .row.valign-wrapper .col div[style*="display:inline-block;margin-top:15px;"],
+.night-theme .content-box .row.valign-wrapper,
+.night-theme .bc-content div .row div:last-child,
+.night-theme .bc-content form .row .col div[style*="font-size:14px;"],
+.night-theme .row .col.m9  .content-box .row .col.s9 div[style="word-break:break-word;padding-top:10px;color:#666;font-size:14px;"],
+.night-theme div[style*="font-size:12px;color:#666666;"],
+.night-theme div[style*="padding-left:25px;overflow:hidden;"] div[style*="color:#777;font-size:14px;"],
+.night-theme #TimerDisplay,
+.night-theme div[style*="padding:2px;font-size:12px;"],
+.night-theme .modal-trigger,
+.night-theme a,
+.night-theme span[style*="top:3px;left:5px;position:absolute;font-size:11px;color:#666666;"]{
+    color: rgb(150, 150, 150) !important;
+}
+
+
+.night-theme  .row .col.m9  .row .col.l9 .content-box form #status {
+    background-color: #333 !important;
+    color: rgb(200, 200, 200) !important;
+    border: #333 !important;
+}
+
+
+.night-theme #parent-market .content-box div .row .col .responsive-market-img,
+.night-theme #parent-market .content-box #recent-results .row .col a img,
+.night-theme .content-box .row .col #items .row .col a img,
+.night-theme .responsive-market-img {
+    background-color: #3a3a3a !important;
+    border: 1px !important;
+}
+
+.night-theme center a[style*="display:inline-block;margin-left:15px;"]{
+	mix-blend-mode: multiply;
+}
+
+
+.report-abuse{
+	mix-blend-mode: multiply;
+}
+
+
+.night-theme .content-box form i,
+.night-theme .bc-content div:last-child form .input-field i,
+.night-theme .row .col.s12.m9 .content-box li,
+.night-theme .pagination.center-align li,
+.night-theme .ribbon,
+.night-theme div[style*="font-size:35px;color:#15BF6B;"],
+.night-theme div[style*="font-size:35px;color:#F7D358;"],
+.night-theme div[style*="margin-top:-5px;"] img,
+.night-theme font[style*="color:#15BF6b;"],
+.night-theme div[style*="position:absolute;top:0;right:-5px;"],
+.night-theme div[style*="background:#BA2222;padding:2px 15px;color:white;font-size:18px;"],
+.night-theme font[style*="color:#15BF6B;"],
+.night-theme #notification-volume,
+.night-theme .range-field span,
+.night-theme font[color="#00b200"],
+.night-theme .tabs .indicator,
+.night-theme .waves-effect.waves-light.btn,
+.night-theme .groups-green-button,
+.night-theme .market-yellow-button,
+.night-theme .groups-blue-button,
+.night-theme .waves-effect.waves-light.btn.green,
+.night-theme .blue-hover,
+.night-theme .green-hover,
+.night-theme .red-hover,
+.night-theme .groups-red-button,
+.night-theme .market-green-button,
+.night-theme .browser-default.general-textarea,
+.night-theme .waves-button-input,
+.night-theme .modal-close,
+.night-theme .play-game,
+.night-theme .edit-hover,
+.night-theme div[style*="background-image: url(https://storage.googleapis.com/bloxcity-file-storage/assets/images/forum/BronzeVIP.png);"],
+.night-theme div[style*="background-image: url(https://storage.googleapis.com/bloxcity-file-storage/assets/images/forum/GoldVIP.png);"],
+.night-theme .play-game-mini {
+	filter: grayscale(100%) !important;
+	color: rgb(250, 250, 250) !important;
+	border: 0px !important;
+}
+
+
+.night-theme .user-online,
+.night-theme .user-offline,
+.night-theme div[style*="background:green;width:10px;height:10px;border-radius:10px;display:inline-block;"],
+.night-theme div[style*="width:8px;height:8px;border-radius:10px;display:inline-block;"]{
+	filter: grayscale(80%) !important;
+}
+
+
+.night-theme .container .content-box .row .col.s12.m2.l2 .link-side,
+.night-theme .col div[style*="border-bottom: 1px solid #DEDEDE;"],
+.night-theme input[style*="background:#21B523;color:white;padding:8px 8px;font-size:14px;font-weight:500;border:0;border-radius:2px;border-bottom:1px solid #198A1B;outline:none;"],
+.night-theme input[style*="background:#D12C3F;color:white;padding:8px 8px;font-size:14px;font-weight:500;border:0;border-radius:2px;border-bottom:1px solid #A82231;outline:none;"]{
+	background-color: #333 !important;
+	color: rgb(250, 250, 250) !important;
+	border-color: rgb(75, 75, 75) !important;
+}
+
+
+.night-theme div[style*="border-bottom:1px solid #DDDDDD;"],
+.night-theme div[style*="border-radius:0;border:0;border:1px solid #DDDDDD;border-top:0;padding:0 15px;"]{
+	border-bottom: 1px solid rgb(100, 100, 100) !important;
+}
+
+
+.night-theme blockquote,
+.night-theme .material-icons,
+.night-theme font[style*="color:#00b200;"],
+.night-theme font[style*="color:#F7D358;"],
+.night-theme .card-panel.green,
+.night-theme .item-price-cash,
+.night-theme .item-price-coins {
+	filter: grayscale(100%) !important;
+}
+
+
+.night-theme a[style*="display:inline-block;background:#2196F3;color:white;padding:5px 10px;font-size:14px;font-weight:500;border:0;border-radius:2px;border-bottom:1px solid #207FC9;outline:none;"],
+.night-theme a[style*="background:#3ac569;color:white;text-decoration:none;padding:10px 15px;cursor:pointer;display:inline-block;text-align: center;width:200px;"],
+.night-theme a[style*="float:right;background:#E53A40;color:white;text-decoration:none;padding:10px 15px;cursor:pointer;display:inline-block;text-align: center;width:200px;margin-left:25px;"] {
+	background-color: #444 !important;
+	color: rgb(250, 250, 250) !important;
+	border: 0px !important;
+}
+
+
+.night-theme .input-field .waves-effect.waves-light.btn.blue.waves-input-wrapper,
+.night-theme .waves-effect.waves-blue.btn-flat{
+	background-color: #444 !important;
+	color: rgb(250, 250, 250) !important;
+	border: 0px !important;
+}
+
+
+.night-theme .row .col.s12.m9  .content-box div[style*="border-top:1px solid #eee;"],
+.night-theme .content-box .row-valign-wrapper {
+	border-color: rgb(100, 100, 100) !important;
+}
+
+
+.night-theme .col.s12.m10.l10 div .row .col.s6 form #file,
+.night-theme .col.s12.m10.l10 div form #Logo{
+	background-color: #444 !important;
+}
+
+
+.night-theme i[style*="font-size:14px;font-weight:bold;"] {
+	color: #666666 !important;
+	filter: grayscale(100%) !important;
+}
+
+
+.night-theme .brown,
+.night-theme .grey,
+.night-theme .yellow{
+	filter: grayscale(75%) !important;
+	color: rgb(250, 250, 250) !important;
+}
+
+
+.night-theme font[title="Bronze VIP"]{
+	color: rgb(143, 114, 105) !important;
+}
+.night-theme font[title="Gold VIP"]{
+	color: rgb(155, 129, 83) !important;
+}
+.night-theme font[title="Platinum VIP"]{
+	color: rgb(117, 117, 117) !important;
+}
+.night-theme font[title="Silver VIP"]{
+	color: rgb(158, 158, 158) !important;
+}
+
+
+
+
+.night-theme .progressbar {
+	filter: grayscale(50%) !important;
+}
+
+
+.night-theme .tab,
+.night-theme .tab .active,
+.night-theme .tab a[href="#privacy"],
+.night-theme .tab a[href="#account"],
+.night-theme .tab a[href="#password"],
+.night-theme .tab a[href="#billing"],
+.night-theme .tab a[href="#bcplus"] {
+	background-color: #444 !important;
+    border: 0px !important;
+	box-shadow: 0px 0px 0px !important;
+	color: rgb(250, 250, 250) !important;
+}
+
+
+.night-theme .general-textarea,
+.night-theme .general-textbar {
+	background-color: #333 !important;
+	color: rgb(200, 200, 200) !important;
+	border: hidden !important;
+}
+
+
+.night-theme .browser-default.general-textarea,
+.night-theme .browser-default[style*="padding:0;height:auto;border:0;outline:none;border:2px solid #ddd;padding:8px;font-size:14px;color:#555;"] {
+	background-color: #222 !important;
+	color: rgb(200, 200, 200) !important;
+	border: hidden !important;
+}
