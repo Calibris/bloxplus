@@ -259,6 +259,7 @@
 .night-theme .play-game,
 .night-theme .edit-hover,
 .night-theme div[style*="background-image: url(https://storage.googleapis.com/bloxcity-file-storage/assets/images/forum/BronzeVIP.png);"],
+.night-theme div[style*="background-image: url(https://storage.googleapis.com/bloxcity-file-storage/assets/images/forum/GoldVIP.png);"],
 .night-theme .play-game-mini {
 	filter: grayscale(100%) !important;
 	color: rgb(250, 250, 250) !important;
@@ -296,8 +297,15 @@
 .night-theme font[style*="color:#F7D358;"],
 .night-theme .card-panel.green,
 .night-theme .item-price-cash,
-.night-theme .item-price-coins {
+.night-theme .item-price-coins,
+.night-theme img[src*="https://www.bloxcity.com/assets/images/footerImg/"] {
 	filter: grayscale(100%) !important;
+}
+.night-theme a[title="Send a message"],
+.night-theme input[title="Add as friend"],
+.night-theme input[title="Remove as friend"]{
+	background-color: red !important;
+	border: 0px !important;
 }
 
 
