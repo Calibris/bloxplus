@@ -194,7 +194,7 @@ function init() {
 
 	// Getting the latest t-shirt ID
 	$.get(links.tshirts).success(function(data) {
-		recent.id = $('.col', data).first().find('a').first().attr('href').split("https://www.bloxcity.com/market/").join("").split("/").join("");
+		recent.id = parseInt($('.col', data).first().find('a').first().attr('href').split("https://www.bloxcity.com/market/").join("").split("/").join(""));
 		$.get(links.recent).success(function(data){
 			recent.scanned = $('.col', data).first().find('a').first().attr('href').split("https://www.bloxcity.com/market/").join("").split("/").join("");
 
@@ -241,10 +241,9 @@ function init() {
 					} else {
 						info.text = "";
 					}
-
 					if (!JSON.parse(localStorage.getItem('opt_disable_notifications'))) {
-						if (info.text != "" && info.type != "") {
-							if(recent.scanned != scan.id) {
+						if (info.type != "") {
+							if(scan.id != recent.scanned) {
 								if ((info.type == "updated" && JSON.parse(localStorage.getItem('opt_updated_notifier'))) || (info.type == "collectible" && JSON.parse(localStorage.getItem('opt_collectible_notifier'))) || (info.type == "item" && JSON.parse(localStorage.getItem('opt_item_notifier')))) {
 									chrome.notifications.create('new', {
 										type: 'list',
@@ -280,8 +279,8 @@ function init() {
 									}
 								}
 								recent.scanned = scan.id;
-								if(recent.id < scan.id) {
-									recent.id = scan.id;
+								if(recent.id < parseInt(scan.id)) {
+									recent.id = parseInt(scan.id);
 								}
 							}
 						}

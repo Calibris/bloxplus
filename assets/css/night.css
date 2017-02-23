@@ -258,7 +258,8 @@
 .night-theme .modal-close,
 .night-theme .play-game,
 .night-theme .edit-hover,
-.night-theme div[style*="background-image: url(https://storage.googleapis.com/bloxcity-file-storage/assets/images/forum/BronzeVIP.png);"] {
+.night-theme div[style*="background-image: url(https://storage.googleapis.com/bloxcity-file-storage/assets/images/forum/BronzeVIP.png);"],
+.night-theme .play-game-mini {
 	filter: grayscale(100%) !important;
 	color: rgb(250, 250, 250) !important;
 	border: 0px !important;
