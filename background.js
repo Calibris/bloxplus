@@ -1,10 +1,10 @@
-links.recent = "https://www.bloxcity.com/market/recent.php?ItemType=all&Page=1";
-links.tshirts = "https://www.bloxcity.com/market/recent.php?ItemType=tshirt&Page=1";
-links.search = "https://www.bloxcity.com/users/search/";
-links.messages = "https://www.bloxcity.com/account/messages/";
-links.trades = "https://www.bloxcity.com/account/trades/";
-info.time = 2000;
 $.get('https://www.bloxcity.com/users/search/').success(function(data) {
+	links.recent = "https://www.bloxcity.com/market/recent.php?ItemType=all&Page=1";
+	links.tshirts = "https://www.bloxcity.com/market/recent.php?ItemType=tshirt&Page=1";
+	links.search = "https://www.bloxcity.com/users/search/";
+	links.messages = "https://www.bloxcity.com/account/messages/";
+	links.trades = "https://www.bloxcity.com/account/trades/";
+	info.time = 2000;
 	if ($('.dropdown-button1', data).length > 0) {
 		user.name = $('.dropdown-button1[style="font-size:16px;"]', data).text().split("arrow_drop_down").join("").trim();
 		user.id = $('a:contains("Profile")', data).attr('href').split("https://www.bloxcity.com/users/").join("").split("/" + user.name + "/").join("");
