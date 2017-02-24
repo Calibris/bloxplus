@@ -1,3 +1,7 @@
+var report = new Object();
+var sobj = new Object();
+var cobj = new Object();
+
 var faq = [{
 	title: "Is bloxplus legit?",
 	body: "Bloxplus is legit, but we're not an official BLOX City extension and we are not affiliated with BLOX City or their staff. Bloxplus is a safe and friendly user made extension."
