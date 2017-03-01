@@ -163,7 +163,7 @@ function init() {
         });
     };
 
-    //Asking you to join our discord server.
+    // Asking you to join our discord server.
     if (localStorage.getItem('discord') != 'true') {
         chrome.notifications.create('discord', {
             type: 'basic',
