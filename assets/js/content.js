@@ -9,8 +9,11 @@ for (key in settings) {
 	}
 }
 
-$('#more-links').append('<li class="divider"></li>');
-$('#more-links').append('<li><a href="https://www.bloxcity.com/bloxplus" style="font-size:16px;">Bloxplus</a></li>');
+
+$(document).ready(function() {
+	$('#more-links').append('<li class="divider"></li>');
+	$('#more-links').append('<li><a href="https://www.bloxcity.com/bloxplus" style="font-size:16px;">Bloxplus</a></li>');
+});
 
 if (window.location.href.endsWith("/reply/")==true){
 	var reply = document.getElementsByClassName("edit-hover")[0]

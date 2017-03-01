@@ -1,7 +1,6 @@
 var report = new Object();
 var sobj = new Object();
 var cobj = new Object();
-
 var faq = [{
 	title: "Is bloxplus legit?",
 	body: "Bloxplus is legit, but we're not an official BLOX City extension and we are not affiliated with BLOX City or their staff. Bloxplus is a safe and friendly user made extension."
@@ -14,8 +13,7 @@ var faq = [{
 }, {
 	title: "What is Calibris?",
 	body: "Calibris is a development group which own bloxplus as a project, although not all members are developers."
-}]
-
+}];
 var features = [,{
 	title: "Notifiers",
 	body: "Bloxplus provides several notifiers, including: new collectible notifier, updated item notifier, new regular item notifier, new trade notifier, and new message notifier"
@@ -38,7 +36,6 @@ var features = [,{
 	title: "Night Mode",
 	body: "The site's theme is changed to a darker theme, grayscaling most elements and removing most strong colors."
 }];
-
 var settings = [{
 	name: "Disable Notifications",
 	id: "opt_disable_notifications",
@@ -118,3 +115,13 @@ var settings = [{
 	parent: 1,
 	enabled: true
 }];
+
+Object.size = function (obj) {
+    var size = 0, key;
+    
+    for (key in obj) {
+        if (obj.hasOwnProperty(key)) size++;
+    }
+    
+    return size;
+};
