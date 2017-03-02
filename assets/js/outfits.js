@@ -6,7 +6,7 @@ window.onload = function() {
 	var outfits = JSON.parse(localStorage.getItem($('.dropdown-button1[style="font-size:16px;"]').text().split("arrow_drop_down").join("").trim() + '-outfits'));
 
 	$('.l4').append('<div style="height: 25px"></div>');
-	$('.l4').append('<div class="header-text" style="font-size:18px;padding-bottom:5px;">Create Outfit</div>');
+  $('.l4').append('<div class="header-text" style="font-size:18px;padding-bottom:5px;">Create Outfit</div>');
 	$('.l4').append('<div class="content-box" style="text-align: right"> <table width="100%"> <tbody><tr> <td width="35%" style="text-align:right;">Name</td> <td style="padding-left:20px !important;"> <input type="text" id="outfit-name" class="general-textarea" style="width:200px;" placeholder="Outfit Name"> </td> </tr> </tbody></table> <a href="#" id="create-outfit">Create Outfit</a> </div> <div style="color:#777;font-size:14px;">Please note that outfits are a new feature and can have many bugs. It can take up to a minute for the outfit to load.  If it does not load or it logs you out it shouldn' + "'" + 't happen if you try again. Please go to BloxPlus settings and go to support if you have any bugs or questions.</div>');
 	$('[style="text-align:center;color:#999;font-size:14px;"]').append(' | <a id="outfits" style="cursor: pointer; font-weight: normal;" id="pants-link">Outfits</a>');
 
@@ -38,7 +38,7 @@ window.onload = function() {
 	    for (var i = 0; i <= 8; i++) {
 	        if (i == 4 && outfits[4]) {
 	            storage += '<div class="clearfix"></div>';
-	            storage += '<div class="col s3 center-align" style="padding:15px;"> <div style="position:relative;"> <img src="' + outfits[i].img + '" style="display:block;margin:0 auto;width:108.047px;height:108.047px;"> <a href="#" target="_blank"><div style="padding-top:10px;font-size:12px;">' + outfits[i].name + '</div></a> <div style="position:absolute;top:0;right:0;"><a class="dropdown-button" data-beloworigin="true" href="#" data-activates="' + outfits[i].name + '"><i class="material-icons" style="font-size:18px;color:#777777;">settings</i></a><ul id="' + outfits[i].name + '" class="dropdown-content"> <li><a href="#" class="wear-outfit" data="' + outfits[i].name + '">Wear</a></li> <li><a href="#" class="remove-outfit" data="' + outfits[i].name + '">Remove</a></li> </ul></div> </div> </div>'
+              storage += '<div class="col s3 center-align" style="padding:15px;"> <div style="position:relative;"> <img src="' + outfits[i].img + '" style="display:block;margin:0 auto;width:108.047px;height:108.047px;"> <a href="#" target="_blank"><div style="padding-top:10px;font-size:12px;">' + outfits[i].name + '</div></a> <div style="position:absolute;top:0;right:0;"><a class="dropdown-button" data-beloworigin="true" href="#" data-activates="' + outfits[i].name + '"><i class="material-icons" style="font-size:18px;color:#777777;">settings</i></a><ul id="' + outfits[i].name + '" class="dropdown-content"> <li><a href="#" class="wear-outfit" data="' + outfits[i].name + '">Wear</a></li> <li><a href="#" class="remove-outfit" data="' + outfits[i].name + '">Remove</a></li> </ul></div> </div> </div>'
 	        } else if (i == 8) {
 	            storage += '</div>'
 	        } else if (outfits[i]) {
@@ -160,9 +160,9 @@ window.onload = function() {
 	}
 
 	function wearOutfit(arr, pts) {
-	    removeItems(arr, pts);
+    removeItems(arr, pts);
 
-	    var str = "";
+	  var str = "";
 		var b=-1
 		var c=-1
 		var d=-1
@@ -196,16 +196,13 @@ window.onload = function() {
 	function removeItems() {
 	    var items = $('.remove');
 	    var str = "";
-		
 	    for (var i = 0; i < items.length; i++) {
 	        str += items.eq(i).attr('onclick') + "\n";
 	    };
 
 	    eval(str)
 	};
-	
-	
-	function updateWearing() {
+  function updateWearing() {
 	    var xmlHttp = new XMLHttpRequest();
 		xmlHttp.open("GET", "https://www.bloxcity.com/account/GetWearing.php", false);
 	    xmlHttp.send(null);
