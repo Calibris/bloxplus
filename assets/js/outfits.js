@@ -26,23 +26,17 @@ window.onload = function() {
 	    $(this).css('font-weight', 'bold');
 	});
 
-	var xxx = {
-		method: function() {
-			alert('hey');
-		}
-	}
-
 	function loadOutfits() {
 	    var storage = '<div class="row" style="margin-bottom:0;">';
 
 	    for (var i = 0; i <= 8; i++) {
 	        if (i == 4 && outfits[4]) {
 	            storage += '<div class="clearfix"></div>';
-              storage += '<div class="col s3 center-align" style="padding:15px;"> <div style="position:relative;"> <img src="' + outfits[i].img + '" style="display:block;margin:0 auto;width:108.047px;height:108.047px;"> <a href="#" target="_blank"><div style="padding-top:10px;font-size:12px;">' + outfits[i].name + '</div></a> <div style="position:absolute;top:0;right:0;"><a class="dropdown-button" data-beloworigin="true" href="#" data-activates="' + outfits[i].name + '"><i class="material-icons" style="font-size:18px;color:#777777;">settings</i></a><ul id="' + outfits[i].name + '" class="dropdown-content"> <li><a href="#" class="wear-outfit" data="' + outfits[i].name + '">Wear</a></li> <li><a href="#" class="remove-outfit" data="' + outfits[i].name + '">Remove</a></li> </ul></div> </div> </div>'
+              storage += '<div class="col s3 center-align" style="padding:15px;"> <div style="position:relative;"> <img src="' + outfits[i].img + '" style="display:block;margin:0 auto;width:108.047px;height:108.047px;"> <a href="#"><div style="padding-top:10px;font-size:12px;">' + outfits[i].name + '</div></a> <div style="position:absolute;top:0;right:0;"><a class="dropdown-button" data-beloworigin="true" href="#" data-activates="' + outfits[i].name + '"><i class="material-icons" style="font-size:18px;color:#777777;">settings</i></a><ul id="' + outfits[i].name + '" class="dropdown-content"> <li><a href="#" class="wear-outfit" data="' + outfits[i].name + '">Wear</a></li> <li><a href="#" class="remove-outfit" data="' + outfits[i].name + '">Remove</a></li> </ul></div> </div> </div>'
 	        } else if (i == 8) {
 	            storage += '</div>'
 	        } else if (outfits[i]) {
-	            storage += '<div class="col s3 center-align" style="padding:15px;"> <div style="position:relative;"> <img src="' + outfits[i].img + '" style="display:block;margin:0 auto;width:108.047px;height:108.047px;"> <a href="#" target="_blank"><div style="padding-top:10px;font-size:12px;">' + outfits[i].name + '</div></a> <div style="position:absolute;top:0;right:0;"><a class="dropdown-button" data-beloworigin="true" href="#" data-activates="' + outfits[i].name + '"><i class="material-icons" style="font-size:18px;color:#777777;">settings</i></a><ul id="' + outfits[i].name + '" class="dropdown-content"> <li><a href="#" class="wear-outfit" data="' + outfits[i].name + '">Wear</a></li> <li><a href="#" class="remove-outfit" data="' + outfits[i].name + '">Remove</a></li> </ul></div> </div> </div>'
+	            storage += '<div class="col s3 center-align" style="padding:15px;"> <div style="position:relative;"> <img src="' + outfits[i].img + '" style="display:block;margin:0 auto;width:108.047px;height:108.047px;"> <a href="#"><div style="padding-top:10px;font-size:12px;">' + outfits[i].name + '</div></a> <div style="position:absolute;top:0;right:0;"><a class="dropdown-button" data-beloworigin="true" href="#" data-activates="' + outfits[i].name + '"><i class="material-icons" style="font-size:18px;color:#777777;">settings</i></a><ul id="' + outfits[i].name + '" class="dropdown-content"> <li><a href="#" class="wear-outfit" data="' + outfits[i].name + '">Wear</a></li> <li><a href="#" class="remove-outfit" data="' + outfits[i].name + '">Remove</a></li> </ul></div> </div> </div>'
 	        }
 
 	        $('#inventory-box').html(storage);
