@@ -2,7 +2,7 @@
 	"name": "BloxPlus",
 	"short_name": "BP",
 	"description": "Brought to you by Jefemy and Peridax, and the Calibris development group.",
-	"version": "0.3.0.1",
+	"version": "0.3.1.1",
 	"manifest_version": 2,
 	"incognito": "split",
 	"web_accessible_resources": [ "*.html", "https://www.bloxcity.com/*" ],
@@ -18,10 +18,6 @@
 		"scripts": ["assets/js/jquery.js", "assets/js/data.js", "assets/js/content_data.js", "background.js"]
 	},
 	"content_scripts": [{
-		"matches": ["https://www.bloxcity.com/bloxplus/*"],
-		"run_at": "document_end",
-		"js": ["assets/js/jquery.js", "assets/js/materialize.js"]
-	}, {
 		"matches": ["https://www.bloxcity.com/*"],
 		"run_at": "document_end",
 		"js": ["assets/js/jquery.js", "assets/js/content_data.js", "assets/js/content.js"],
@@ -31,5 +27,29 @@
 		"run_at": "document_start",
 		"js": ["assets/js/theme.js"],
 		"css": ["assets/css/night.css"]
+	}, {
+		"matches": ["https://www.bloxcity.com/bloxplus/*"],
+		"run_at": "document_end",
+		"js": ["assets/js/jquery.js", "assets/js/materialize.js", "assets/js/content_data.js", "assets/js/bloxplus.js"]
+	}, {
+		"matches": ["https://www.bloxcity.com/account/ViewTrade.php*"],
+		"run_at": "document_end",
+		"js": ["assets/js/jquery.js", "assets/js/content_data.js", "assets/js/trade.js"]
+	}, {
+		"matches": ["https://www.bloxcity.com/users/search/*"],
+		"run_at": "document_end",
+		"js": ["assets/js/jquery.js", "assets/js/content_data.js", "assets/js/search.js"]
+	}, {
+		"matches": ["https://www.bloxcity.com/users/*"],
+		"run_at": "document_end",
+		"js": ["assets/js/jquery.js", "assets/js/content_data.js", "assets/js/user.js"]
+	}, {
+		"matches": ["https://www.bloxcity.com/forum/thread/*"],
+		"run_at": "document_end",
+		"js": ["assets/js/jquery.js", "assets/js/content_data.js", "assets/js/thread.js"]
+	}, {
+		"matches": ["https://www.bloxcity.com/account/character/*"],
+		"run_at": "document_end",
+		"js": ["assets/js/jquery.js", "assets/js/materialize.js", "assets/js/content_data.js", "assets/js/outfits.js"]
 	}]
 }

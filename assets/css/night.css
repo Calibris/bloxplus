@@ -168,20 +168,15 @@
 .night-theme .item-stock,
 .night-theme a[target="_blank"],
 .night-theme td[style*="padding-left:15px;font-size:14px;color:#555555;"],
-.night-theme div[style*="font-size:14px;color:#666666;"],
-.night-theme div[style*="color:#ED3737;font-size:13px;"],
-.night-theme div[style*="font-size:14px;"],
 .night-theme p,
 .night-theme div[style*="font-size:26px;font-weight:300;"] b,
-.night-theme div[style*="color:#999;font-size:14px;"],
-.night-theme div[style*="font-size:18px;font-weight:300;margin-top:-10px;"],
 .night-theme #blocked-users,
 .night-theme .content-box,
-.night-theme div[style*="font-size:12px;color:#E71D36;"],
 .night-theme legend[style*="text-transform:uppercase;color:#666;font-size:12px;"],
 .night-theme .pagination.center-align li a,
 .night-theme div[style*="display:inline;cursor:pointer;"] div div span,
-.night-theme .tab.col.s4 a {
+.night-theme .tab.col.s4 a,
+.night-theme div {
     color: rgb(200, 200, 200) !important;
 }
 
