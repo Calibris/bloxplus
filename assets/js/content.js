@@ -12,7 +12,7 @@ for (key in settings) {
 
 $(document).ready(function() {
 	$('#more-links').append('<li class="divider"></li>');
-	$('#more-links').append('<li><a href="https://www.bloxcity.com/bloxplus" style="font-size:16px;">Bloxplus</a></li>');
+  $('#more-links').append('<li><a href="https://www.bloxcity.com/bloxplus" style="font-size:16px;">BloxPlus</a></li>');
 });
 
 if (window.location.href.endsWith("/reply/")==true){

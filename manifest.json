@@ -49,7 +49,7 @@
 		"js": ["assets/js/jquery.js", "assets/js/content_data.js", "assets/js/thread.js"]
 	}, {
 		"matches": ["https://www.bloxcity.com/account/character/*"],
-		"run_at": "document_idle",
+    "run_at": "document_end",
 		"js": ["assets/js/jquery.js", "assets/js/materialize.js", "assets/js/content_data.js", "assets/js/outfits.js"]
 	}]
 }
